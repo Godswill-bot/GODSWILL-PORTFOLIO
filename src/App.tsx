@@ -122,7 +122,34 @@ function App() {
           </motion.div>
         </section>
 
-        {/* About Section */}
+        
+          {/* Stats Section */}
+          <div className="w-full relative border-t border-neutral-800 mt-16 md:mt-24 pt-16 pb-16">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-950 px-4 text-[10px] tracking-[0.2em] text-neutral-500 font-semibold uppercase">
+              Scroll Down
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 w-full text-center items-center">
+              <div className="flex flex-col items-center">
+                <h3 className="text-4xl md:text-5xl font-bold mb-2">3+</h3>
+                <span className="text-neutral-500 text-sm">Years Experience</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <h3 className="text-4xl md:text-5xl font-bold mb-2">20+</h3>
+                <span className="text-neutral-500 text-sm">Projects Delivered</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <h3 className="text-4xl md:text-5xl font-bold mb-2">15+</h3>
+                <span className="text-neutral-500 text-sm">Happy Clients</span>
+              </div>
+              <div className="flex flex-col items-center md:items-start text-center md:text-left text-neutral-400">
+                <span className="font-medium mb-1 whitespace-nowrap">Based in Abeokuta, NG</span>
+                <span className="text-neutral-500 text-sm">Available Worldwide</span>
+              </div>
+            </div>
+          </div>
+
+          {/* About Section */}
         <AnimatedSection id="about">
           <div className="flex items-center gap-4 mb-10">
             <h2 className="text-3xl font-bold">About Me</h2>
