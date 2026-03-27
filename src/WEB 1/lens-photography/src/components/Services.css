@@ -1,0 +1,106 @@
+.services {
+  padding: 6rem 2rem;
+  background-color: #fff;
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+}
+
+.services-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-image {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-info {
+  padding: 1.5rem 0;
+}
+
+.service-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.service-category {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 4rem 1.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .service-image {
+    height: 300px;
+  }
+}

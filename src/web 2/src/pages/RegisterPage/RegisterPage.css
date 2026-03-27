@@ -1,0 +1,31 @@
+/* RegisterPage uses the same styles as LoginPage */
+@import '../LoginPage/LoginPage.css';
+
+.register-page .auth-image {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.register-page .auth-image::before {
+  background: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=1000&fit=crop') center/cover;
+}
+
+.register-page .btn-auth {
+  background-color: #2ecc71;
+}
+
+.register-page .btn-auth:hover {
+  background-color: #27ae60;
+}
+
+.register-page .auth-form input:focus {
+  border-color: #2ecc71;
+}
+
+.register-page .forgot-link,
+.register-page .auth-switch a {
+  color: #2ecc71;
+}
+
+.register-page .checkbox-label a {
+  color: #2ecc71;
+}
