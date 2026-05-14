@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 18px; /* Bumps up the base size globally, making all fonts a bit bigger */
+  font-size: 18px;
 }
 
 body {
@@ -16,14 +16,50 @@ body {
   color: #f5f5f5;
   font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
 }
 
-.font-cursive, .text-purple-400, .text-purple-500 {
+.portfolio-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: radial-gradient(circle at 50% 18%, black, transparent 72%);
+}
+
+.portfolio-grid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.22), transparent 80%);
+  transform: translateX(-100%);
+  animation: shimmer 8s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 35% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70%, 100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.font-cursive {
   font-family: 'Caveat', cursive;
   font-size: 1.35em;
   font-weight: 600;
-  text-shadow: 0 0 12px rgba(167, 139, 250, 0.4);
+  text-shadow: 0 0 18px rgba(251, 146, 60, 0.35);
+}
+
+button,
+a {
+  cursor: pointer;
 }
 
 /* Custom Scrollbar */
